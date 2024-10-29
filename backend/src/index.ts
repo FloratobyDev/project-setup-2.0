@@ -17,9 +17,11 @@ const pool = new Pool({
 });
 
 // Enable CORS
-app.use(cors({
-  origin: 'http://localhost:5173', // restrict access to the frontend app
-}));
+app.use(
+  cors({
+    origin: "https://test-setup.affordabletesturls.online", // restrict access to the frontend app
+  })
+);
 
 // Test the database connection
 pool.query("SELECT NOW()", (err, res) => {
@@ -43,5 +45,7 @@ app.get("/api/data", async (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  console.log(`Backend server running at http://localhost:${port}`);
+  console.log(
+    `Backend server running at http://localhost:${port}:https://app.affordabletesturls.online`
+  );
 });
