@@ -10,4 +10,7 @@ export default defineConfig({
       usePolling: true  // Enable polling to detect file changes in Docker
     },
   },
+  build: {
+    outDir: 'dist',  // Ensure the output directory is `dist`
+  },
 });
