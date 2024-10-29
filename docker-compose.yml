@@ -5,7 +5,7 @@ services:
     build:
       context: ./frontend
     environment:
-      - VITE_BACKEND_URL=https://awkws0c8cww40c4oos4w0g48.affordabletesturls.online  # Use backend's URL or internal hostname
+      - VITE_BACKEND_URL=https://tsgkc80wo0gg0wo088ccock4.affordabletesturls.online # Use backend's URL or internal hostname
 
   backend:
     build:
