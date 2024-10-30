@@ -4,9 +4,6 @@ services:
   frontend:
     build:
       context: ./frontend
-    environment:
-      - VITE_BACKEND_URL=https://app.affordabletesturls.online  # Use backend service name if on the same network
-
   backend:
     build:
       context: ./backend
