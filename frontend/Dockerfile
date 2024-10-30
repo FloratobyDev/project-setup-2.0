@@ -9,5 +9,5 @@ COPY . .
 # Build the app with Vite, which outputs static files to the "dist" folder
 RUN npm run build
 
-CMD ["npm", "run", "preview"]
+# CMD ["npm", "run", "preview"]
 # This Dockerfile ends here since Coolify will serve the static files
